@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Supabase Backup to Google Drive</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1f2328; --muted:#59636e; --line:#d1d9e0; --accent:#0969da; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0d1117; --fg:#e6edf3; --muted:#9198a1; --line:#3d444d; --accent:#4493f8; }
+  }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.7 system-ui,-apple-system,"Segoe UI","Noto Sans TC",sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+  h1 { font-size:1.8rem; margin:0 0 .5rem; }
+  h2 { font-size:1.2rem; margin:2rem 0 .5rem; }
+  p, li { color:var(--fg); }
+  .muted { color:var(--muted); }
+  a { color:var(--accent); }
+  hr { border:0; border-top:1px solid var(--line); margin:2rem 0; }
+  footer { margin-top:2.5rem; color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Supabase Backup to Google Drive</h1>
+  <p class="muted">A personal, single-user backup tool.</p>
+
+  <h2>What this app does</h2>
+  <p>
+    This is a small personal automation tool. It runs on a schedule in the developer’s own
+    private GitHub repository and copies the developer’s own Supabase database backups and
+    Supabase Storage files into a folder named <code>supabase-backup</code> in the
+    developer’s own Google Drive account.
+  </p>
+
+  <h2>How it uses Google Drive</h2>
+  <ul>
+    <li>It uses only the <code>drive.file</code> scope, which lets the app see and manage
+        only the files and folders that the app itself created.</li>
+    <li>It cannot read, list, or modify any other file in the Google Drive account.</li>
+    <li>It is used only by its developer, with the developer’s own Google account.
+        It is not offered to the public and does not collect data from any other users.</li>
+  </ul>
+
+  <h2>Privacy</h2>
+  <p>
+    Please read the <a href="privacy.html">Privacy Policy</a> for details on how Google user
+    data is accessed, used, stored, and shared.
+  </p>
+
+  <hr>
+
+  <h2>繁體中文簡介</h2>
+  <p>
+    這是一個個人自用的自動備份工具，僅供開發者本人使用。它會在開發者自己的私有 GitHub
+    儲存庫中定時執行，把開發者自己的 Supabase 資料庫備份與 Storage 檔案，複製到開發者自己
+    Google Drive 內名為 <code>supabase-backup</code> 的資料夾。
+    本工具只使用 <code>drive.file</code> 權限，僅能存取由本工具自己建立的檔案，
+    無法讀取 Drive 中的其他任何檔案。詳情請見
+    <a href="privacy.html">隱私權政策</a>。
+  </p>
+
+  <footer>
+    Contact: <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a>
+  </footer>
+</main>
+</body>
+</html>

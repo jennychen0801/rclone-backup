@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – Supabase Backup to Google Drive</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1f2328; --muted:#59636e; --line:#d1d9e0; --accent:#0969da; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0d1117; --fg:#e6edf3; --muted:#9198a1; --line:#3d444d; --accent:#4493f8; }
+  }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.7 system-ui,-apple-system,"Segoe UI","Noto Sans TC",sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+  h1 { font-size:1.8rem; margin:0 0 .5rem; }
+  h2 { font-size:1.2rem; margin:2rem 0 .5rem; }
+  .muted { color:var(--muted); }
+  a { color:var(--accent); }
+  hr { border:0; border-top:1px solid var(--line); margin:2rem 0; }
+</style>
+</head>
+<body>
+<main>
+  <p><a href="index.html">← Home</a></p>
+  <h1>Privacy Policy</h1>
+  <p class="muted">App: Supabase Backup to Google Drive &nbsp;·&nbsp; Last updated: November 10, 2026</p>
+
+  <h2>1. Overview</h2>
+  <p>
+    Supabase Backup to Google Drive (“the app”) is a personal automation tool created and used
+    solely by its developer. It is not distributed to or used by the public. This policy explains
+    how the app accesses, uses, stores, and shares Google user data.
+  </p>
+
+  <h2>2. Google user data the app accesses</h2>
+  <p>
+    The app requests one Google OAuth scope:
+    <code>https://www.googleapis.com/auth/drive.file</code>.
+    With this scope the app can access only the files and folders that the app itself creates in
+    the authorized Google Drive account (a folder named <code>supabase-backup</code> and the backup
+    files inside it). The app cannot view, list, or modify any other file in Google Drive.
+    The app does not access Gmail, Contacts, Calendar, profile information, or any other
+    Google user data.
+  </p>
+
+  <h2>3. How the data is used</h2>
+  <p>
+    The app uses this access for one purpose only: to upload, and to delete after a retention
+    period, backup files that the app created in the <code>supabase-backup</code> folder.
+    Google user data is not used for advertising, analytics, profiling, or any other purpose.
+  </p>
+
+  <h2>4. How the data is stored</h2>
+  <p>
+    The app stores no Google user data of its own. The only Google-related credential kept is an
+    OAuth token for the developer’s own Google account, which is stored as an encrypted secret in
+    the developer’s private GitHub repository settings and is used only by the scheduled backup
+    workflow. The backup files themselves are stored in the developer’s own Google Drive and,
+    for a short period, as private build artifacts in the same private GitHub repository.
+  </p>
+
+  <h2>5. Sharing and disclosure</h2>
+  <p>
+    The app does not sell, share, transfer, or disclose Google user data to any third party,
+    and no person other than the developer has access to it. The app does not allow humans to
+    read user data except as needed by the developer to operate their own backups.
+  </p>
+
+  <h2>6. Google API Services User Data Policy</h2>
+  <p>
+    The app’s use and transfer of information received from Google APIs adheres to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
+    User Data Policy</a>, including the Limited Use requirements.
+  </p>
+
+  <h2>7. Data retention and deletion</h2>
+  <p>
+    Backup files in Google Drive are retained for a limited period and then deleted automatically
+    by the app. You can revoke the app’s access at any time at
+    <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>,
+    and delete the <code>supabase-backup</code> folder from Google Drive at any time.
+  </p>
+
+  <h2>8. Changes to this policy</h2>
+  <p>
+    This policy may be updated from time to time. The “Last updated” date at the top of this page
+    shows the date of the latest revision.
+  </p>
+
+  <h2>9. Contact</h2>
+  <p>
+    Questions about this policy: <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a>
+  </p>
+
+  <hr>
+
+  <h2>繁體中文摘要</h2>
+  <p>
+    本應用程式為開發者個人自用的備份工具，不對外提供服務。它僅要求
+    <code>drive.file</code> 權限，只能存取由本應用程式自己建立的檔案（
+    <code>supabase-backup</code> 資料夾與其中的備份檔），無法讀取 Google Drive 中的其他檔案，
+    也不存取 Gmail、聯絡人、行事曆或個人資料。應用程式本身不儲存任何 Google 使用者資料，
+    僅在開發者私有的 GitHub 儲存庫中以加密 Secret 保存開發者自己的授權 token。
+    資料不會出售、分享或提供給任何第三方。你可隨時於
+    <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>
+    撤銷授權，並刪除 Drive 中的備份資料夾。
+  </p>
+</main>
+</body>
+</html>
